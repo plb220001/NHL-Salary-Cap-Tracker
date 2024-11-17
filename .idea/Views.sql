@@ -37,19 +37,6 @@ JOIN
 WHERE
     pl.position = 'G' AND c.cap_hit > 6000000;
 
--- View to see the cap utilization of teams
-CREATE VIEW TeamCapUtilization AS
-SELECT
-    t.team_name,
-    SUM(c.cap_hit) AS total_cap_used,
-    t.cap_space - SUM(c.cap_hit) AS remaining_cap_space
-FROM
-    Teams t
-JOIN
-    Contracts c ON t.team_id = c.team_id
-GROUP BY
-    t.team_name, t.cap_space;
-
 -- View to see transactions from the last 6 months
 CREATE VIEW RecentTransactions AS
 SELECT
