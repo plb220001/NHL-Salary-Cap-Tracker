@@ -8,3 +8,4 @@ README
    Transaction Insertions.sql
    Assets Insertions.sql
 3. Finalize the database by running the scripts found in Post-Insertion Table Updates.sql. This file exists to fix the implementation of some things that were changed in the development of the database and so had to be changed outside of the creation script.
+4. To add the views from project deliverable 2, run the scripts found in Views.sql
