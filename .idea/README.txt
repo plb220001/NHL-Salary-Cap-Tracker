@@ -9,3 +9,4 @@ README
    Assets Insertions.sql
 3. Finalize the database by running the scripts found in Post-Insertion Table Updates.sql. This file exists to fix the implementation of some things that were changed in the development of the database and so had to be changed outside of the creation script.
 4. To add the views from project deliverable 2, run the scripts found in Views.sql
+5. 'Salary Front End.zip' contains the python program that serves as the front end. Ensure you are using mysql and that you have adjusted the host, user, and password in the python file based on your mysql settings. Once you have established a connection to mysql successfully, the program should work as intended.
